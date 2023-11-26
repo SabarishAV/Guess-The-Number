@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="">
+        <div class="flashMessage" id="bigger">
+            <p>Your guess is bigger than the number</p>
+        </div>
+        <div class="flashMessage" id="smaller">
+            <p>Your guess is smaller than the number</p>
+        </div>
+        <div class="pt-5 heading col-12 m-0 text-center">
+            <h1>Guess The Number</h1>
+        </div>
+        <div class="col-12 pt-3 m-0 text-center">
+            <p>The number is between 1 and 100. Less chance you take, more points you get</p>
+        </div>
+        <div class="col-12 d-flex justify-content-center pt-5 m-0">
+            <input type="text" name="" id="guess" placeholder="Enter the number here..." class="input-guess col-sm-6 col-md-3">
+        </div>
+        <div class="col-12 d-flex justify-content-center pt-3 m-0">
+            <button onclick="clicked()" id="btn" class="btn-grad">Submit</button>
+        </div>
+
+        <div id="score" class="c-ans col-12 d-flex justify-content-center align-items-center flex-column pt-4">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
